@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void copiar1(char *x,char *y)
+void cadena1(char *x,char *y)
 {
     int a=0,b=0;
     while(*(x+a)!='\0')
@@ -23,7 +23,7 @@ void copiar1(char *x,char *y)
 
 
 }
-void copiar2(char x[],char y[])
+void cadena2(char x[],char y[])
 {
     int a=0,b=0;
     while(x[a]!='\0')
@@ -42,13 +42,11 @@ void copiar2(char x[],char y[])
 }
 int main()
 {
-	char *ttt=new char[10];
-    ttt="german";
-    char sss[]="garcia";
-    char tttt[]="pan";
-    char ssss[]="jamon";
-    copiar1(tttt,ssss);
-    cout<<ssss<<endl;
-    copiar1(ttt,sss);
-    cout<<sss<<endl;
+	char *tpr=new char[10];
+    tpr="bebidas";
+    char str[]="gratis";
+    char trps[]="pan";
+    char strs[]="jamon";
+    cadena1(trps,strs);cout<<strs<<endl;
+    cadena2(tpr,str);cout<<str<<endl;
 }
